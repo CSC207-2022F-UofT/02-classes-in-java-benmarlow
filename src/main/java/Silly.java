@@ -88,7 +88,7 @@ public class Silly implements Comparable<Silly>{
     * @param s2 a String that is the second part of this Silly instance's name.
     */
     public Silly(String s1, String s2) {
-        this.name = [s1] + [s2];
+        this.name = s1 + s2;
     }
 
 
