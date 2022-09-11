@@ -88,7 +88,7 @@ public class Silly implements Comparable<Silly>{
     * @param s2 a String that is the second part of this Silly instance's name.
     */
     public Silly(String s1, String s2) {
-        this.name = s1 + s2;
+        this.name = [s1] + [s2];
     }
 
 
@@ -125,7 +125,7 @@ public class Silly implements Comparable<Silly>{
         y.countStatic();
         x.countStatic();
         x.countStatic();
-        int[] expected_values = {1, 2, 3, 4};
+        int[] expected_values = {0, 1, 2, 3};
 
         System.out.println("The countStatic calls will return " + Arrays.toString(expected_values));
     }
