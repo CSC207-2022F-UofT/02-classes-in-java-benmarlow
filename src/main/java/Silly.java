@@ -166,7 +166,7 @@ public class Silly implements Comparable<Silly>{
         if (!(o instanceof Silly)){
             return false;
         } else {
-            return this.name.equals(String(o));
+            return this.name.equals(Silly.toString(o));
         }
             
 
